@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startups Anchieta | Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    
+    <div class="divLogin">
+        <header>
+            <h2>Sistema Startups Anchieta</h2>
+            <hr>
+            <p><strong>Ciando cadastro de usuário</strong></p>
+        </header>
+
+        <section class="loginOption">
+            <p>Digite seu nome:</p>
+            <input type="text" id="nome">
+
+            <p>Digite um usuário:</p>
+            <input type="text" id="user">
+            
+            <p>Digite seu email:</p>
+            <input type="text" id="email">
+
+            <p>Digite sua senha</p>
+            <input type="password" id="senha">
+            
+                    <fieldset>
+                        <legend>Qual será seu tipo de acesso:</legend>
+                    
+                        <div>
+                          <input type="radio" id="clienteOption" name="userType" value="Cliente">
+                          <label for="clienteOption">Cliente</label>
+                        </div>
+                    
+                        <div>
+                          <input type="radio" id="profissionalOption" name="userType" value="Profissional">
+                          <label for="profissionalOption">Profissional</label>
+                        </div>
+                    
+                    </fieldset>
+        </section>
+
+        <footer>
+            <button class="btnAcess" onclick="createUser()">
+                Cadastrar
+            </button>
+            <a href="../login/index.html">Já possuí login? Clique aqui</a>
+            <a href="../site/index.html">Acessar site</a>
+        </footer>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
