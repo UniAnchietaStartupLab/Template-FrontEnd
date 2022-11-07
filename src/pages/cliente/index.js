@@ -1,6 +1,12 @@
 var params = window.location.search.substr(1).split("&");
 const uuid = atob(...params);
+const sessionSt = sessionStorage.getItem("uuid");
 obtemDadosUsuario(uuid);
+
+if (sessionSt === null) {
+  alert("Sessão expirada!");
+  window.location.replace(`../login/index.html`);
+}
 
 function obtemDadosUsuario(uuid) {
   fetch(`http://localhost:3333/dataUser/${uuid}`, {
@@ -43,5 +49,6 @@ function obtemDadosUsuario(uuid) {
 }
 
 function voltar() {
+  sessionStorage.clear();
   window.location.replace(`../site/index.html`);
 }
