@@ -39,6 +39,7 @@ function validaLogin() {
       .then((data) => {
         if (data.length > 0) {
           alert("Sucesso!");
+          sessionStorage.setItem("uuid", btoa(data[0].uuid));
 
           if (data[0].tipo == "Profissional") {
             window.location.replace(
