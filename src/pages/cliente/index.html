@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link rel="icon" type="image/png" href="../../assets/images/favicon.png" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,125 +21,32 @@
         <div>
           <ul>
             <a href="../perfil/index.html"><li id="boasVindas">...</li></a>
-            <li><button class="sairBtn" onclick="sair()">Sair</button></li>
           </ul>
         </div>
       </div>
     </header>
 
-    <div class="itens-wrapper" id="itens-wrapper">
-      <div class="items" id="items">
-        <div class="item"><img src="../../assets/images/image_df.png" /></div>
-        <div class="item"><img src="../../assets/images/image_df.png" /></div>
-        <div class="item"><img src="../../assets/images/image_df.png" /></div>
-        <div class="item"><img src="../../assets/images/image_df.png" /></div>
-        <div class="item"><img src="../../assets/images/image_df.png" /></div>
-        <div class="item"><img src="../../assets/images/image_df.png" /></div>
-        <div class="item"><img src="../../assets/images/image_df.png" /></div>
+    <div class="menu">
+      <div class="contentButtons">
+        <button class="menuBtnStyle">Agendamentos</button>
+        <button class="menuBtnStyle">Profissionais</button>
+        <button class="menuBtnStyle">Configurações</button>
+        <button class="menuBtnStyle">Perfil</button>
+      </div>
+      <div class="sairContent">
+        <button class="sairBtn" onclick="sair()">Sair</button>
       </div>
     </div>
 
-    <div class="contentCards">
-      <div class="card">
-        <h2>Texto</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          labore harum non. Debitis temporibus totam.
-        </p>
-        <button>Acessar</button>
-      </div>
-      <div class="card">
-        <h2>Texto</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          labore harum non. Debitis temporibus totam.
-        </p>
-        <button>Acessar</button>
-      </div>
-      <div class="card">
-        <h2>Texto</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          labore harum non. Debitis temporibus totam.
-        </p>
-        <button>Acessar</button>
-      </div>
-    </div>
-
-    <section class="sectionPage">
-      <div class="sobreNos">
-        <header id="sobreNos">
-          <h1>Sobre nós</h1>
+    <section class="page" id="contentPage">
+      <div id="contentProfissionais" class="contentProfissionais">
+        <header>
+          <input type="text" />
+          <button><i class="material-icons">search</i></button>
         </header>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt
-          soluta, laudantium quasi officia iure illo cum maxime fugit a
-          necessitatibus. Fugit, laudantium! Beatae ipsa cum vitae laboriosam!
-          Totam, at! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Distinctio similique saepe sapiente atque doloremque facilis corrupti,
-          tempore nostrum blanditiis quos quam ducimus non soluta laboriosam
-          illum enim exercitationem omnis. Maiores! Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Necessitatibus modi impedit, illum et
-          sed soluta voluptatibus labore assumenda perferendis magnam ab
-          cupiditate facilis, iure repudiandae esse voluptates sequi ut animi.
-        </p>
-      </div>
-
-      <div class="videosContent">
-        <video width="400" height="240" autoplay loop>
-          <source src="../../assets/videos/model_df.mp4" type="video/mp4" />
-        </video>
-        <video width="400" height="240" autoplay loop>
-          <source src="../../assets/videos/model_df.mp4" type="video/mp4" />
-        </video>
-        <video width="400" height="240" autoplay loop>
-          <source src="../../assets/videos/model_df.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div class="sobreNos">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt
-          soluta, laudantium quasi officia iure illo cum maxime fugit a
-          necessitatibus. Fugit, laudantium! Beatae ipsa cum vitae laboriosam!
-          Totam, at! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Distinctio similique saepe sapiente atque doloremque facilis corrupti,
-          tempore nostrum blanditiis quos quam ducimus non soluta laboriosam
-          illum enim exercitationem omnis. Maiores! Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Necessitatibus modi impedit, illum et
-          sed soluta voluptatibus labore assumenda perferendis magnam ab
-          cupiditate facilis, iure repudiandae esse voluptates sequi ut animi.
-        </p>
       </div>
     </section>
 
-    <footer class="footerContentPage" id="contato">
-      <div class="imagesFooter">
-        <div><img src="../../assets/images/anchieta.png" /></div>
-        <div><img src="../../assets/images/redes_sociais_df.png" /></div>
-      </div>
-
-      <div class="sobreNos">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore sunt
-          soluta, laudantium quasi officia iure illo cum maxime fugit a
-          necessitatibus. Fugit, laudantium! Beatae ipsa cum vitae laboriosam!
-          Totam, at! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Distinctio similique saepe sapiente atque doloremque facilis corrupti,
-          tempore nostrum blanditiis quos quam ducimus non soluta laboriosam
-          illum enim exercitationem omnis. Maiores! Lorem ipsum dolor sit amet
-          consectetur, adipisicing elit. Necessitatibus modi impedit, illum et
-          sed soluta voluptatibus labore assumenda perferendis magnam ab
-          cupiditate facilis, iure repudiandae esse voluptates sequi ut animi.
-        </p>
-        <br />
-        <p class="contactNumbers">
-          loremipsum@email.com<br />
-          (11) 9999-9999<br />
-          (11) 9999-9999
-        </p>
-      </div>
-    </footer>
     <script src="./index.js"></script>
   </body>
 </html>
