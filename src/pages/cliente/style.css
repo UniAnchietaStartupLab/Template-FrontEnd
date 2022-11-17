@@ -191,9 +191,51 @@ a:hover {
 
 .listaProfissionais {
   width: 70%;
-  height: 500px;
+  height: 200px;
   background-color: #ffffff;
   border-radius: 10px;
 
   box-shadow: 2px 2px 3px #00000010;
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  text-align: start;
+
+  border-style: none;
+  cursor: pointer;
+  position: relative;
+  transition: 1s;
+}
+
+.listaProfissionais:hover {
+  width: 73%;
+  height: 230px;
+  transition: 1s;
+}
+
+.listaProfissionais div:nth-child(2) img {
+  height: 130px;
+}
+
+.listaProfissionais button {
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
+}
+
+.contentList {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  height: 100%;
 }
