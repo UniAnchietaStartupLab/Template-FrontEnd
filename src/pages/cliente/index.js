@@ -40,3 +40,24 @@ function sair() {
   sessionStorage.clear();
   window.location.replace(`../site/index.html`);
 }
+
+function mostraConteudo(conteudo) {
+  let contentPage = document.getElementById("contentPage");
+  contentPage.innerHTML = "";
+
+  switch (conteudo) {
+    case "Agendamentos":
+      contentPage.innerHTML = "";
+      break;
+    case "Profissionais":
+      contentPage.innerHTML =
+        '<div id="contentProfissionais" class="contentProfissionais"><h1>Profissionais</h1><header><input type="text" /><button><i class="material-icons">search</i></button></header></div>';
+      break;
+    case "Configuracoes":
+      contentPage.innerHTML = "";
+      break;
+    case "Perfil":
+      contentPage.innerHTML = "";
+      break;
+  }
+}

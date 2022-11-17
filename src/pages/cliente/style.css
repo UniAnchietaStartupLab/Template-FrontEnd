@@ -144,12 +144,13 @@ a:hover {
 
 .contentProfissionais {
   display: flex;
-  justify-content: end;
+  flex-direction: column;
 }
 
 .contentProfissionais header {
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 10px;
 }
 
@@ -186,4 +187,13 @@ a:hover {
 .contentProfissionais header button:hover {
   background-color: #818181;
   transition: 1s;
+}
+
+.listaProfissionais {
+  width: 70%;
+  height: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+  box-shadow: 2px 2px 3px #00000010;
 }
