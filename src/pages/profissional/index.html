@@ -24,17 +24,25 @@
 
     <div class="menu">
       <div class="contentButtons">
-        <button class="menuBtnStyle">Minha agenda</button>
-        <button class="menuBtnStyle">Clientes</button>
-        <button class="menuBtnStyle">Configurações</button>
-        <button class="menuBtnStyle">Perfil</button>
+        <button class="menuBtnStyle" onclick="mostraConteudo('Minha agenda')">
+          Minha agenda
+        </button>
+        <button class="menuBtnStyle" onclick="mostraConteudo('Clientes')">
+          Clientes
+        </button>
+        <button class="menuBtnStyle" onclick="mostraConteudo('Configuracoes')">
+          Configurações
+        </button>
+        <button class="menuBtnStyle" onclick="mostraConteudo('Perfil')">
+          Perfil
+        </button>
       </div>
       <div>
         <button class="sairBtn" onclick="sair()">Sair</button>
       </div>
     </div>
 
-    <section class="page"></section>
+    <section class="page" id="contentPage"></section>
 
     <script src="./index.js"></script>
   </body>
