@@ -217,7 +217,7 @@ a:hover {
   transition: 1s;
 }
 
-.listaProfissionais div:nth-child(2) img {
+.ftPerson {
   height: 130px;
 }
 
@@ -238,4 +238,21 @@ a:hover {
   gap: 20px;
 
   height: 100%;
+}
+
+/*  ------------- Perfil ------------- */
+
+.contentPersonData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.optionPerson {
+  margin-top: 20px;
+}
+
+.contentAdressData {
+  padding: 50px;
 }
