@@ -137,4 +137,31 @@ a:hover {
   border-radius: 30px;
 
   border: solid 1px #000;
+  padding: 40px;
+}
+
+/*  ------------- Perfil ------------- */
+
+.contentPersonData {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.optionPerson {
+  margin-top: 20px;
+}
+
+.contentAdressData,
+.aboutProfessional {
+  padding: 50px;
+}
+
+.ftPerson {
+  height: 130px;
+}
+
+h3 {
+  font-size: 15px;
 }
