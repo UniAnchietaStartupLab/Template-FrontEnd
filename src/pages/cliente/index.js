@@ -48,7 +48,7 @@ function mostraConteudo(conteudo) {
 
   switch (conteudo) {
     case "Agendamentos":
-      contentPage.innerHTML = "";
+      contentPage.innerHTML = "<div><h1>Meus agendamentos</h1></div>";
       break;
     case "Profissionais":
       contentPage.innerHTML =
@@ -58,7 +58,7 @@ function mostraConteudo(conteudo) {
       contentPage.innerHTML = `<div id="contentProfissionais" class="contentProfissionais"> <h1>Meu perfil</h1> <div> <div class="contentPersonData"> <div> <div class="optionPerson"> <p>Usuário:</p> <h3>${userData.usuario}</h3> </div> <div class="optionPerson"> <p>Nome:</p> <h3>${userData.nome}</h3> </div> <div class="optionPerson"> <p>Email:</p> <h3>${userData.email}</h3> </div> </div> <div> <img src="../../assets/images/person.png" alt="foto Perfil" class="ftPerson" /> </div> </div> <hr /> <div class="contentAdressData"> <div class="optionPerson"> <p>Endereço:</p> <h3>...</h3> </div> <div class="optionPerson"> <p>Número:</p> <h3>...</h3> </div> <div class="optionPerson"> <p>Bairro:</p> <h3>...</h3> </div> <div class="optionPerson"> <p>CEP:</p> <h3>...</h3> </div> <div class="optionPerson"> <p>Complemento:</p> <h3>...</h3> </div> </div> </div> </div>`;
       break;
     case "Configuracoes":
-      contentPage.innerHTML = "";
+      contentPage.innerHTML = "<div><h1>Configurações</h1></div>";
       break;
   }
 }
