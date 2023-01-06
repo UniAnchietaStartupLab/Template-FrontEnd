@@ -113,8 +113,7 @@ a:hover {
 }
 
 .menuBtnStyle:hover {
-  margin-left: 40px;
-  width: 110%;
+  width: 105%;
   border-radius: 10px 30px 30px 10px;
   transition: 1.5s;
 
