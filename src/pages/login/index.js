@@ -39,15 +39,16 @@ function validaLogin() {
       .then((data) => {
         if (data.length > 0) {
           alert("Sucesso!");
-          sessionStorage.setItem("uuid", btoa(data[0].uuid));
+          console.log(data);
+          sessionStorage.setItem("uuid", btoa(data[0].UUID));
 
           if (data[0].tipo == "Profissional") {
             window.location.replace(
-              `../profissional/index.html?${btoa(data[0].uuid)}`
+              `../profissional/index.html?${btoa(data[0].UUID)}`
             );
           } else {
             window.location.replace(
-              `../cliente/index.html?${btoa(data[0].uuid)}`
+              `../cliente/index.html?${btoa(data[0].UUID)}`
             );
           }
         } else {

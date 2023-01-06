@@ -3,6 +3,7 @@ const uuid = atob(...params);
 const sessionSt = sessionStorage.getItem("uuid");
 obtemDadosUsuario(uuid);
 var userData;
+console.log(uuid);
 
 if (sessionSt === null) {
   alert("Sessão expirada!");
@@ -21,12 +22,12 @@ function obtemDadosUsuario(uuid) {
     .then((response) => response.json())
     .then((data) => {
       userData = {
-        uuid: data[0].uuid,
-        nome: data[0].nome,
-        usuario: data[0].usuario,
-        email: data[0].email,
-        senha: data[0].senha,
-        tipo: data[0].tipo,
+        uuid: data[0].UUID,
+        nome: data[0].NOME,
+        usuario: data[0].USUARIO,
+        email: data[0].EMAIL,
+        senha: data[0].SENHA,
+        tipo: data[0].TIPO,
       };
 
       const htmlID = document.getElementById("boasVindas");
